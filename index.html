@@ -630,7 +630,7 @@
 
   <!-- Chat Icon Start-->
   <div class="chat-icon" id="chat-icon">
-    <img src="images/chatbot.png" alt="Chat Icon"> <!-- Replace with your chat icon image -->
+    
   </div>
 
   <!-- Chatbot Container -->
@@ -744,15 +744,8 @@
 
   </script>
 
-  <script>
-    // FAQ Toggle Functionality
-    const faqItems = document.querySelectorAll('.faq-item');
-
-    faqItems.forEach(item => {
-      item.addEventListener('click', () => {
-        item.classList.toggle('active');
-      });
-    });
+<script>
+  (function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="XttJ_kUZLEBIz56fMLn2d";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
   </script>
 
   <script>
