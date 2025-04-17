@@ -1,559 +1,722 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Markedium</title>
-    <link rel="icon" href="images/Logo.jpg" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Markedium</title>
+  <!--Main stylesheet-->
+  <link rel="stylesheet" href="home.css">
+  <!--Logo icon-->
+  <link rel="icon" href="images/Logo.jpg" />
 
-    <!-- bootstrap link -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  
-    <!-- fontawesome link -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-      crossorigin="anonymous" referrerpolicy="no-referrer" />
-  
-    <!-- space grosek google font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet" />
-  
-    <!-- plus jakarta sans google font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
-      rel="stylesheet" />
-  
-    <!-- poppins google font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet" />
-  
-    <!-- fontawesome link -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-      crossorigin="anonymous" referrerpolicy="no-referrer" />
-  
-    <!-- Familjen Grotesk font-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:ital,wght@0,400..700;1,400..700&display=swap"
-      rel="stylesheet">
+  <!-- poppins google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
 
-      <!-- inter font  -->
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <!-- fontawesome link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-      <!-- open sans font -->
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  <!--Boostrap css-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
 
-      <!-- lora font -->
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
-      
-      <!--Boxicon-->
-      <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <!-- Familjen Grotesk font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:ital,wght@0,400..700;1,400..700&display=swap"
+    rel="stylesheet">
 
-      <link rel="stylesheet" href="home.css">
+  <!-- inter font  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+  <!-- open sans font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet">
+
+  <!-- lora font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+    rel="stylesheet">
+
+  <!--Boxicon-->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+  <!--Main style shoot-->
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 </head>
+
 <body>
- <!---------Page Loader-------------->
- <div id="preloader"></div>
+  <!---------Page Loader-------------->
+  <div id="preloader"></div>
 
-    <!-- nav section start-->
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light mt-2">
-          <div class="container p-3 rounded-4 px-4" style="background: #eef2f94d">
-            <a class="navbar-brand" href="Home.html">
-               Markedium
-            </a>
-  
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarScroll"
-              aria-controls="navbarScroll"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-  
-            <div class="collapse navbar-collapse" id="navbarScroll">
-              <ul
-                class="navbar-nav m-auto my-2 my-lg-0"
-                style="--bs-scroll-height: 100px"
-              >
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                </li>
-  
-               
-  
-                <li class="nav-item">
-                  <a class="nav-link" href="Blog.html">Contact Us</a>
-                </li>
-  
-                <li class="nav-item">
-                  <a class="nav-link" href="About.html">About Us</a>
-                </li>
-              </ul>
-  
-           
-                <a
-                  href="Form.html"
-                  class="btn btn-success d-flex align-items-center border-0"
-                  style="background-color: blueviolet;"
-                >
-                  Contact Us 
-                </a>
-              </div>
-            </div>
-          </div>
-        </nav>
-      </header>
-    <!----nav section end-->
-     
-
-    <!-- hero section start -->
-    <section class="hero">
-        <div class="container">
-            <div class="row justify-content-end hero-row">
-               <div class="col-md-7 first-hero-col">
-                <h2 class="welcome">
-                    Welcome To <span class="green-figorate">Markedium</span>: Where Every Brand Tells Their Story
-                </h2>
-
-                <p class="hero-word">
-                    Where Every Brand Tells Their Story
-                    Igniting Brand Awareness through Digital Storytelling
-                </p>
-
-                <!--<div class="hero-buttons d-flex">
-                    <a href="Form.html" class="hero-btn1">Get Started</a>
-                    <a href="#" class="hero-btn2">Sign in</a> 
-                </div>-->
-               </div>
-
-               <div class="col-md-5 hero-col-ii ml-auto img-col">
-                <img src="images/Story.jpg" alt="" class="img-fluid " width="605px" height="529px" style="border-radius: 30px;">
-               </div>
-            </div>
-        </div>
-    </section>
-    <!-- hero section end -->
-
-    <!-- feature start -->
-   <section class="features">
+  <!-- nav section start-->
+  <nav class="navbar navbar-expand-lg navbar-dark"
+    style="background-color: blueviolet; color: white; border-radius: 9px;">
     <div class="container">
-      <div class="feature-heading">
-        <h2 class="features-head">Features</h2>
-        <p class="features-head-word">
-          Amazing features from the figorate app that gives seamless experience and total 
-          control on your goals
-        </p>
+      <a class="navbar-brand" href="#"><img src="images/Logo 2.png" alt="Logo" style="height: 50px; width: 80px;"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#landing-page">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">About</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active" href="#services">Service</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active" href="#pricing">Prices</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active" href="#FAQ">FAQ</a>
+          </li>
+        </ul>
+
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-but">
+            <a class="btn btn-outline-light" href="#">Contact Us</a>
+          </li>
+          <li class="nav-but">
+            <a class="btn btn-outline-light" href="#">Book Now</a>
+          </li>
+        </ul>
       </div>
+    </div>
+  </nav>
+  <!----nav section end-->
 
-      <div class="row">
-        <div class="col-md-4 mt-3">
-          <div class="card card-feature">
-            <div class="card-body">
-              <img src="images/Frame 1171275603.png" class="img-fluid feature-img" alt="" width="89px" height="89px">
-              <h5 class="card-title">Expert Guidance </h5>
-              <p class="card-text">
-                Schedule one-on-one consultations with 
-                certified fitness trainers or nutritionists for
-                personalized guidance and support tailored
-                to your needs and goals.
-              </p>
-            </div>
+  <!-- hero section start -->
+  <div id="landing-page">
+    <section class="hero">
+      <div class="container">
+        <div class="row justify-content-end hero-row">
+          <div class="col-md-7 first-hero-col">
+            <h2 class="welcome">
+              Welcome To <span class="green-figorate">Markedium</span>: Where Every Brand Tells Their Story
+            </h2>
+
+            <p class="hero-word">
+              Ignite Your Brand’s Narrative: Unleash the Power of Storytelling to Connect, Engage, and Inspire Your
+              Audience.
+              Streamlining the consumer's journey
+            </p>
+
+            <!--<div class="hero-buttons d-flex">
+                 <a href="Form.html" class="hero-btn1">Get Started</a>
+                 <a href="#" class="hero-btn2">Sign in</a> 
+             </div>-->
           </div>
-        </div>
 
-        <div class="col-md-4 mt-3">
-          <div class="card card-feature ">
-            <div class="card-body">
-              <img src="images/Frame 1171275604.png" class="img-fluid feature-img" alt="" width="89px" height="89px">
-              <h5 class="card-title">Progress Tracking </h5>
-              <p class="card-text">
-                 Track your workouts, log your meals, and
-                celebrate your achievements along the
-                way with our tracking tools.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4 mt-3">
-          <div class="card card-feature ">
-            <div class="card-body">
-              <img src="images/Frame 1171275605 (03).png" class="img-fluid feature-img" alt="" width="89px" height="89px">
-              <h5 class="card-title">Fitness Plan </h5>
-              <p class="card-text">
-                Achieve your fitness goals with
-                personalised workout routines tailored to
-                your desired goals and preferences.
-              </p>
-            </div>
+          <div class="col-md-5 hero-col-ii ml-auto img-col">
+            <img src="images/Story.jpg" alt="" class="img-fluid " width="605px" height="529px"
+              style="border-radius: 30px;">
           </div>
         </div>
       </div>
+    </section>
+  </div>
+  <!-- hero section end -->
 
-      <div class="row card-row">
-        <div class="col-md-4 mt-3">
-          <div class="card card-feature ">
+  <!-- feature start -->
+  <section class="features">
+    <div class="container">
+      <h1 class="text-center mt-5 display-3 fw-bold">Our <span class="theme-text">Features</span></h1>
+      <hr class="mx-auto mb-5 w-25">
+      <div class="row g-4">
+        <!-- Feature 1 -->
+        <div class="col-12 col-sm-6 col-md-3">
+          <div class="card feature-card shadow h-100">
+            <img src="images/Visualize Your Data With Storytelling.jpg" alt="Feature 1" class="card-img-top">
             <div class="card-body">
-              <img src="images/Frame 1171275603 (1).png" class="img-fluid feature-img" alt="" width="89px" height="89px">
-              <h5 class="card-title">Nutrition Program</h5>
-              <p class="card-text">
-                Access a database of our expert-guided
-                healthy recipes and meal plans based on
-                your dietary needs, and take control of 
-                your diet.
-
-              </p>
+              <h3 class="text-center">Craft Compelling Stories</h3>
+              <hr class="mx-auto w-75">
+              <p class="text-center">We create engaging and impactful stories that resonate with your audience.</p>
             </div>
           </div>
         </div>
-
-        <div class="col-md-4 mt-3">
-          <div class="card card-feature ">
+        <!-- Feature 2 -->
+        <div class="col-12 col-sm-6 col-md-3">
+          <div class="card feature-card shadow h-100">
+            <img src="images/Data driving.jpg" alt="Feature 2" class="card-img-top">
             <div class="card-body">
-              <img src="images/Frame 1171275604 (1).png" class="img-fluid feature-img" alt="" width="89px" height="89px">
-              <h5 class="card-title">Community Forum </h5>
-              <p class="card-text">
-                Connect with like-minded individuals in
-                our vibrant community. Share your
-                progress, participate in challenges, and
-                find support and motivation from others
-                on similar wellness journeys.
-
-              </p>
+              <h3 class="text-center">Data-Driven Insights</h3>
+              <hr class="mx-auto w-75">
+              <p class="text-center">Leverage analytics to craft strategies tailored to your business goals.</p>
             </div>
           </div>
         </div>
-
-        <div class="col-md-4 mt-3">
-          <div class="card card-feature ">
+        <!-- Feature 3 -->
+        <div class="col-12 col-sm-6 col-md-3">
+          <div class="card feature-card shadow h-100">
+            <img src="images/social media.jpg" alt="Feature 3" class="card-img-top">
             <div class="card-body">
-              <img src="images/Frame 1171275605 (1).png" class="img-fluid feature-img" alt="" width="89px" height="89px">
-              <h5 class="card-title">Marketplace </h5>
-              <p class="card-text">
-                Shop top-quality products, supplements,
-                fitness equipment, and services to support
-                your health goals. 
-
-              </p>
+              <h3 class="text-center">Social Media Management</h3>
+              <hr class="mx-auto w-75">
+              <p class="text-center">Enhance your online presence with expert social media strategies.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Feature 4 -->
+        <div class="col-12 col-sm-6 col-md-3">
+          <div class="card feature-card shadow h-100">
+            <img src="images/Branding.jpg" alt="Feature 4" class="card-img-top">
+            <div class="card-body">
+              <h3 class="text-center">Custom Branding Solutions</h3>
+              <hr class="mx-auto w-75">
+              <p class="text-center">Tailored branding strategies to help your business stand out.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Feature 5 -->
+        <div class="col-12 col-sm-6 col-md-3">
+          <div class="card feature-card shadow h-100">
+            <img src="images/Connet.jpg" alt="Feature 4" class="card-img-top">
+            <div class="card-body">
+              <h3 class="text-center">Connect with the Right Agencies</h3>
+              <hr class="mx-auto w-75">
+              <p class="text-center">Streamlining the search for marketing partners to save time and resources.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Feature 6 -->
+        <div class="col-12 col-sm-6 col-md-3">
+          <div class="card feature-card shadow h-100">
+            <img src="images/Learning.jpg" alt="Feature 4" class="card-img-top">
+            <div class="card-body">
+              <h3 class="text-center">Foster Continuous Learning</h3>
+              <hr class="mx-auto w-75">
+              <p class="text-center">Providing access to educational resources to keep entrepreneurs updated on
+                marketing trends.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Feature 7 -->
+        <div class="col-12 col-sm-6 col-md-3">
+          <div class="card feature-card shadow h-100">
+            <img src="images/Ehance.jpg" alt="Feature 4" class="card-img-top">
+            <div class="card-body">
+              <h3 class="text-center">Enhance Engagement</h3>
+              <hr class="mx-auto w-75">
+              <p class="text-center">Fueling consumer interaction and transforming low awareness into meaningful
+                connections..</p>
+            </div>
+          </div>
+        </div>
+        <!-- Feature 8 -->
+        <div class="col-12 col-sm-6 col-md-3">
+          <div class="card feature-card shadow h-100">
+            <img src="images/management.jpg" alt="Feature 4" class="card-img-top">
+            <div class="card-body">
+              <h3 class="text-center">Streamline Project Management</h3>
+              <hr class="mx-auto w-75">
+              <p class="text-center">Simplifying collaboration to focus on innovation and efficiency.</p>
             </div>
           </div>
         </div>
       </div>
     </div>
-   </section>
-    <!-- feature end -->
-
-        
-   
-
-    <!-- why section start -->
-  <section class="why">
-     <div class="container">
-        <div class="why-heading text-center">
-            <h2 class="why-head">Markedium's Solution: Digital Storytelling </h2>
-
-            <p class="why-word">
-              We craft and amplify compelling brand stories that resonate with target audiences.
-            </p>
-        </div>
-
-        <div class="row">
-          <div class="col-md-6">
-            <img src="images/Download premium image of Business conference microphone audience talking_  about space, face, people, microphone, and portrait 12508516.jpg" alt="doc" class="img-fluid male-doc" style="border-radius: 20px;">
-          </div>
-
-          <div class="col-md-3 second-column-sm">
-            <div class="row">
-              <div class="col-md-12 border-column">
-                <h5 class="small-col-easy">Tailored to Your Needs</h5>
-
-                <p class="small-col-word">
-                  Data-driven storytelling, leveraging audience insights and platform-specific strategies.
-                </p>
-              </div>
-              <!-- <hr class="mt-3"> -->
-              <div class="col-md-12 easy-column ">
-                <h5 class="small-col-easy">Case Study 1</h5>
-
-                <p class="small-col-word">
-                  A small coffee shop increased
-                   social engagement by 300% 
-                   through a video series 
-                   about its coffee bean sourcing.
-
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-3 last-border">
-            <div class="row">
-              <div class="col-md-12 last-column">
-                <h5 class="small-col-easy">Comprehensive <br> Wellness Solutions</h5>
-                <p class="small-col-word">
-                  From fitness to nutrition to <br>
-                  community support, Figorate <br>
-                  offers everything you need to <br> 
-                  achieve holistic well-being.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-     </div>
   </section>
-    <!-- why section end -->
+  <!-- feature end -->
 
-  
 
-   
 
-<!-- section class faq start -->
- <section class="faq-section">
-        <div class="container">
-            <h1 class="faq-title">Frequently Asked Questions</h1>
-            <div class="faq-content">
-                <!-- FAQ Item 1 -->
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>What is Markedium?</h3>
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                    <div class="faq-answer">
-                        <p>Markedium is a platform that helps brands tell their stories through digital storytelling, enhancing brand awareness and engagement.</p>
-                    </div>
-                </div>
-                <!-- FAQ Item 2 -->
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>How does Markedium work?</h3>
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                    <div class="faq-answer">
-                        <p>Markedium works by crafting compelling brand stories using data-driven insights and platform-specific strategies to reach your target audience effectively.</p>
-                    </div>
-                </div>
-                <!-- FAQ Item 3 -->
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>What services does Markedium offer?</h3>
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                    <div class="faq-answer">
-                        <p>We offer personalized branding strategies, digital storytelling, social media management, and content creation tailored to your business needs.</p>
-                    </div>
-                </div>
-                <!-- FAQ Item 4 -->
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>How can I get started with Markedium?</h3>
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                    <div class="faq-answer">
-                        <p>You can get started by contacting us through our website or signing up for a consultation to discuss your brand's goals and needs.</p>
-                    </div>
-                </div>
-            </div>
+
+  <!-- How it works start -->
+  <section class="timeline-section">
+    <div class="container">
+      <h2 class="text-center mb-5">How Markedium Works</h2>
+      <div class="timeline">
+        <!-- Timeline Item 1 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>Step 1: User Onboarding</h3>
+            <p>Sign up on the Markedium platform and complete a comprehensive onboarding questionnaire to define your
+              goals.</p>
+          </div>
         </div>
-    </section>
-<!-- section class faq end -->
-
-    <!-------Parallax Effect------->
-    <section class="parallax">
-      <div class="parallax-content">
-          <h1>Welcome to Markedium</h1>
-          <p>Experience the power of storytelling with our innovative branding solutions.</p>
-          <a href="#pricing" class="btn">Explore Services</a>
+        <!-- Timeline Item 2 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>Step 2: Strategy Development</h3>
+            <p>Our team develops data-driven strategies tailored to your brand's unique needs and objectives.</p>
+          </div>
+        </div>
+        <!-- Timeline Item 3 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>Step 3: Execution</h3>
+            <p>We bring your brand story to life through impactful campaigns and creative storytelling techniques.</p>
+          </div>
+        </div>
+        <!-- Timeline Item 4 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>Step 4: Growth & Optimization</h3>
+            <p>We monitor and optimize your brand's performance to ensure sustained growth and success.</p>
+          </div>
+        </div>
       </div>
+    </div>
+  </section>
+
+  <!-- How it works end -->
+
+
+
+
+
+  <!-- section class faq start -->
+  <div id="FAQ">
+    <section class="faq">
+      <div class="container">
+        <h2 class="faq-head">FAQ</h2>
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                    aria-expanded="true" aria-controls="collapseOne">
+                    <h4 class="what"> What is Markedium?</h4>
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p class="what-words">
+                      Markedium is a platform that helps brands tell their stories through digital storytelling,
+                      enhancing brand awareness and engagement.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item accordion-item2 ">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <h4 class="what">How does Markedium work?</h4>
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Markedium works by crafting compelling brand stories using data-driven
+                    insights and platform-specific strategies to reach your target audience effectively.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item ">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <h4 class="what">What services does Markedium offer?</h4>
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    We offer personalized branding strategies, digital storytelling, social media management,
+                    and content creation tailored to your business needs.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item ">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    <h4 class="what">How can I get started with Markedium?</h4>
+                  </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    You can get started by contacting us through our website or signing up for a consultation to discuss
+                    your brand's goals and needs.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <!-- section class faq end -->
+
+  <!-------Parallax Effect------->
+  <section class="parallax">
+    <div class="parallax-content">
+      <h1>Welcome to Markedium</h1>
+      <p>Experience the power of storytelling with our innovative branding solutions.</p>
+      <a href="#services" class="btn">Explore Services</a>
+    </div>
   </section>
 
   <!-------Parallax Effect------->
-  
-   <!-- price section start -->
-    <div id="pricing">
-   <div class="container-fluid" >
-    <!--<h2 style="text-align: center;" class="h2">Markedium Subscription Pricing (NGN)</h2>-->
-    <div class="price-row">
-        <div class="price-col">
-            <p>Basic (Monthly)</p>
-            <h3>NGN 10K<span>/month</span></h3>
-            <ul>
-                <li>1 website</li>
-                <li>1 website</li>
-                <li>1 website</li>
-                <li>1 website</li>
-            </ul>
-            <button>Add To Cart</button>
-        </div>
-        <div class="price-col">
-            <p>Basic (Monthly)</p>
-            <h3>NGN 10K<span>/month</span></h3>
-            <ul>
-                <li>1 website</li>
-                <li>1 website</li>
-                <li>1 website</li>
-                <li>1 website</li>
-            </ul>
-            <button>Add To Cart</button>
-        </div>
-        <div class="price-col">
-            <p>Basic (Monthly)</p>
-            <h3>NGN 10K<span>/month</span></h3>
-            <ul>
-                <li>1 website</li>
-                <li>1 website</li>
-                <li>1 website</li>
-                <li>1 website</li>
-            </ul>
-            <button>Add To Cart</button>
-        </div>
-    </div>
- </div>
-    </div>
- <!--price section end -->
 
-<!--meet the team start-->
-<section class="team">
-  <h1>Meet Our Team</h1>
-  <div class="team-content">
+  <!--Markedium Services Start-->
+  <div id="services">
+    <section class="features">
+      <div class="container">
+        <h1 class="text-center mt-5 display-3 fw-bold">Our <span class="theme-text">Services</span></h1>
+        <hr class="mx-auto mb-5 w-25" style="color: white;">
+        <div class="row g-4">
+          <!-- Feature 1 -->
+          <div class="col-12 col-sm-6 col-md-3">
+            <div class="card feature-card shadow h-100">
+              <img src="images/SEO.jpg" alt="Feature 1" class="card-img-top">
+              <div class="card-body">
+                <h3 class="text-center">Search Engine Optimization</h3>
+                <hr class="mx-auto w-75">
+                <p class="text-center">We create engaging and impactful stories that resonate with your audience.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Feature 2 -->
+          <div class="col-12 col-sm-6 col-md-3">
+            <div class="card feature-card shadow h-100">
+              <img src="images/PR.jpg" alt="Feature 2" class="card-img-top">
+              <div class="card-body">
+                <h3 class="text-center">Digital-PR</h3>
+                <hr class="mx-auto w-75">
+                <p class="text-center">Leverage analytics to craft strategies tailored to your business goals.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Feature 3 -->
+          <div class="col-12 col-sm-6 col-md-3">
+            <div class="card feature-card shadow h-100">
+              <img src="images/Media.jpg" alt="Feature 3" class="card-img-top">
+              <div class="card-body">
+                <h3 class="text-center">Social Media</h3>
+                <hr class="mx-auto w-75">
+                <p class="text-center">Enhance your online presence with expert social media strategies.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Feature 4 -->
+          <div class="col-12 col-sm-6 col-md-3">
+            <div class="card feature-card shadow h-100">
+              <img src="images/Web.jpg" alt="Feature 4" class="card-img-top">
+              <div class="card-body">
+                <h3 class="text-center">Web-development</h3>
+                <hr class="mx-auto w-75">
+                <p class="text-center">Tailored branding strategies to help your business stand out.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Feature 5 -->
+          <div class="col-12 col-sm-6 col-md-3">
+            <div class="card feature-card shadow h-100">
+              <img src="images/Advertising.jpg" alt="Feature 4" class="card-img-top">
+              <div class="card-body">
+                <h3 class="text-center">Digital Advertising</h3>
+                <hr class="mx-auto w-75">
+                <p class="text-center">Streamlining the search for marketing partners to save time and resources.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Feature 6 -->
+          <div class="col-12 col-sm-6 col-md-3">
+            <div class="card feature-card shadow h-100">
+              <img src="images/Revenue.jpg" alt="Feature 4" class="card-img-top">
+              <div class="card-body">
+                <h3 class="text-center">Revenue Acceleration Platform</h3>
+                <hr class="mx-auto w-75">
+                <p class="text-center">Providing access to educational resources to keep entrepreneurs updated on
+                  marketing trends.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Feature 7 -->
+          <div class="col-12 col-sm-6 col-md-3">
+            <div class="card feature-card shadow h-100">
+              <img src="images/Design.jpg" alt="Feature 4" class="card-img-top">
+              <div class="card-body">
+                <h3 class="text-center">Designs</h3>
+                <hr class="mx-auto w-75">
+                <p class="text-center">Fueling consumer interaction and transforming low awareness into meaningful
+                  connections..</p>
+              </div>
+            </div>
+          </div>
+          <!-- Feature 8 -->
+          <div class="col-12 col-sm-6 col-md-3">
+            <div class="card feature-card shadow h-100">
+              <img src="images/Content.jpg" alt="Feature 4" class="card-img-top">
+              <div class="card-body">
+                <h3 class="text-center">Content Marketing</h3>
+                <hr class="mx-auto w-75">
+                <p class="text-center">Simplifying collaboration to focus on innovation and efficiency.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <!--Markedium Services Ends-->
+
+  <!-- price section start -->
+  <div id="pricing">
+    <section class="parallax-price">
+      <div class="parallax-content">
+        <h1>Markedium Pricing Plans</h1>
+        <p>Choose the plan that best suits your needs and start your journey with Markedium today!</p>
+      </div>
+    </section>
+
+    <section class="pricing-section">
+      <div class="container">
+        <h2 class="text-center mb-5">Our Pricing Plans</h2>
+        <div class="row g-4">
+          <!-- Pricing Plan 1 -->
+          <div class="col-12 col-sm-6 col-md-4">
+            <div class="price-card">
+              <h3>Basic Plan</h3>
+              <p class="price">NGN 20K<span>/month</span></p>
+              <ul>
+                <li>Essential tools</li>
+                <li>Templates</li>
+                <li>Community access</li>
+              </ul>
+              <button class="btn">Book Now</button>
+            </div>
+          </div>
+          <!-- Pricing Plan 2 -->
+          <div class="col-12 col-sm-6 col-md-4">
+            <div class="price-card">
+              <h3>Pro Plan</h3>
+              <p class="price">NGN 40K<span>/month</span></p>
+              <ul>
+                <li>Advanced tools</li>
+                <li>Project management</li>
+                <li>Limited consultation</li>
+              </ul>
+              <button class="btn">Book Now</button>
+            </div>
+          </div>
+          <!-- Pricing Plan 3 -->
+          <div class="col-12 col-sm-6 col-md-4">
+            <div class="price-card">
+              <h3>Premium Plan</h3>
+              <p class="price">NGN 70K<span>/month</span></p>
+              <ul>
+                <li>Full access</li>
+                <li>Personalized agency matching</li>
+                <li>Unlimited consultation</li>
+              </ul>
+              <button class="btn">Book Now</button>
+            </div>
+          </div>
+          <!-- Pricing Plan 4 -->
+          <div class="col-12 col-sm-6 col-md-4">
+            <div class="price-card">
+              <h3>Workshop Plan</h3>
+              <p class="price">NGN 20K<span>/month</span></p>
+              <ul>
+                <li>Visibility options for brands and agencies.</li>
+              </ul>
+              <button class="btn">Book Now</button>
+            </div>
+          </div>
+          <!-- Pricing Plan 5 -->
+          <div class="col-12 col-sm-6 col-md-4">
+            <div class="price-card">
+              <h3>Sponsorship Packages Plan</h3>
+              <p class="price">NGN 70K<span>/month</span></p>
+              <ul>
+                <li>Visibility options for brands and agencies.</li>
+                <li>Branding opportunites</li>
+              </ul>
+              <button class="btn">Book Now</button>
+            </div>
+          </div>
+          <!-- Pricing Plan 6 -->
+          <div class="col-12 col-sm-6 col-md-4">
+            <div class="price-card">
+              <h3>Educational Content</h3>
+              <ul>
+                <li>Free Online Courses</li>
+                <li>Accessible resources on digital marketing and storytelling.</li>
+              </ul>
+              <button class="btn">Book Nowt</button>
+            </div>
+          </div>
+          <!-- Pricing Plan 7 -->
+          <div class="col-12 col-sm-6 col-md-4">
+            <div class="price-card">
+              <h3>Marketplace for services</h3>
+              <ul>
+                <li>Transaction Fee: 5% of total service fee</li>
+                <li>Charged to freelancers and agencies.</li>
+              </ul>
+              <button class="btn">Book Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!--price section end -->
+
+  <!--meet the team start-->
+  <section class="team">
+    <h1>Meet Our Team</h1>
+    <div class="team-content">
       <!-- Team Member 1 -->
       <div class="team-card">
-          <div class="card-inner">
-              <img src="images/CEO.jpg" alt="Team Member 1">
-              <h2>Omotayo Pelumin</h2>
-              <p>CEO & Founder</p>
-              <div class="social-icons">
-                  <a href="#"><i class="fab fa-facebook-f"></i></a>
-                  <a href="#"><i class="fab fa-twitter"></i></a>
-                  <a href="#"><i class="fab fa-linkedin-in"></i></a>
-              </div>
+        <div class="card-inner">
+          <img src="images/CEO.jpg" alt="Team Member 1">
+          <h2>Omotayo Pelumin</h2>
+          <p>CEO & Founder</p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
           </div>
+        </div>
       </div>
       <!-- Team Member 2 -->
       <div class="team-card">
-          <div class="card-inner">
-              <img src="images/Emmanuel.jpg" alt="Team Member 2">
-              <h2>Eguzoro Emmanuel Chiebuka</h2>
-              <p>Lead Developer</p>
-              <div class="social-icons">
-                  <a href="#"><i class="fab fa-facebook-f"></i></a>
-                  <a href="#"><i class="fab fa-twitter"></i></a>
-                  <a href="#"><i class="fab fa-linkedin-in"></i></a>
-              </div>
+        <div class="card-inner">
+          <img src="images/Emmanuel.jpg" alt="Team Member 2">
+          <h2>Eguzoro Emmanuel Chiebuka</h2>
+          <p>Lead Developer</p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
           </div>
+        </div>
       </div>
       <!-- Team Member 3 -->
       <div class="team-card">
-          <div class="card-inner">
-              <img src="team3.jpg" alt="Team Member 3">
-              <h2>Emily Johnson</h2>
-              <p>UI/UX Designer</p>
-              <div class="social-icons">
-                  <a href="#"><i class="fab fa-facebook-f"></i></a>
-                  <a href="#"><i class="fab fa-twitter"></i></a>
-                  <a href="#"><i class="fab fa-linkedin-in"></i></a>
-              </div>
+        <div class="card-inner">
+          <img src="team3.jpg" alt="Team Member 3">
+          <h2>Emily Johnson</h2>
+          <p>UI/UX Designer</p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
           </div>
+        </div>
       </div>
-  </div>
-</section>
-<!--meet the team end-->
+    </div>
+  </section>
+  <!--meet the team end-->
 
   <!-- Chat Icon Start-->
   <div class="chat-icon" id="chat-icon">
     <img src="images/chatbot.png" alt="Chat Icon"> <!-- Replace with your chat icon image -->
-</div>
+  </div>
 
-<!-- Chatbot Container -->
-<div class="chatbot-container" id="chatbot-container">
+  <!-- Chatbot Container -->
+  <div class="chatbot-container" id="chatbot-container">
     <div class="chat-header">
-        <h3>Markedium Chatbot</h3>
-        <button id="close-chat">X</button>
+      <h3>Markedium Chatbot</h3>
+      <button id="close-chat">X</button>
     </div>
     <div class="chat-body" id="chat-body">
-        <div class="bot-message">
-            <p>Hello! I'm here to answer your questions about Markedium. Ask me anything!</p>
-        </div>
+      <div class="bot-message">
+        <p>Hello! I'm here to answer your questions about Markedium. Ask me anything!</p>
+      </div>
     </div>
     <div class="chat-footer">
-        <input type="text" id="user-input" placeholder="Type your question here...">
-        <button id="send-btn">Send</button>
+      <input type="text" id="user-input" placeholder="Type your question here...">
+      <button id="send-btn">Send</button>
     </div>
-</div>
-<!-- Chat Icon Ends-->
+  </div>
+  <!-- Chat Icon Ends-->
 
-     <!-- footer start -->
- <footer class="footer">
+  <!-- footer start -->
+  <footer class="footer">
     <div class="container">
       <div class="row">
         <div class="col-lg-2.5 mt-0 mb-3">
           <div class="d-flex mt-3">
             <a class="navbar-brand company-name-ii" href="Home.html">
-              <img src="images/Rectangle 61 (3).png" width="40px"
-                height="40px" alt="" class="img-fluid d-inline-block footer-imggg align-top">
-              Markedium 
+              <img src="images/Rectangle 61 (3).png" width="40px" height="40px" alt=""
+                class="img-fluid d-inline-block footer-imggg align-top">
+              Markedium
             </a>
           </div>
         </div>
-  
-       
-  
+
+
+
         <div class="col-lg-2 offset-lg-1">
           <ul class="foot-links">
-            <a href="#" class="foot-link"> <li class="list-head">Quick link</li></a>
-            <!--<a href="Markeplace.html" class="foot-link"> <li class="list-word">Marketplace</li> </a>-->
+            <a href="#landing-page" class="foot-link">
+              <li class="list-head">Home</li>
+            </a>
             <a href="#" class="foot-link"> <li class="list-word">About Us</li> </a>
-            <a href="#" class="foot-link"> <li class="list-word">Blog</li> </a>
+            <a href="#services" class="foot-link">
+              <li class="list-word">Serivces</li>
+            </a>
+            <a href="#pricing" class="foot-link">
+              <li class="list-word">Prices</li>
+            </a>
+            <a href="#FAQ" class="foot-link">
+              <li class="list-word">FAQ</li>
+            </a>
           </ul>
         </div>
-  
+
         <div class="col-lg-2 offset-lg-1">
           <ul class="foot-links">
-            <a href="#" class="foot-link"> <li class="list-head">Legal</li></a>
-            <a href="#" class="foot-link"> <li class="list-word">Private Policy</li> </a>
-            <a href="#" class="foot-link"> <li class="list-word">Terms of Service</li> </a>
+            <a href="#" class="foot-link">
+              <li class="list-head">Legal</li>
+            </a>
+            <a href="#" class="foot-link">
+              <li class="list-word">Private Policy</li>
+            </a>
+            <a href="#" class="foot-link">
+              <li class="list-word">Terms of Service</li>
+            </a>
           </ul>
         </div>
       </div>
-  
+
       <hr class="mb-3" style="color: #fff;" />
       <div class="container mt-4">
         <div class="row">
           <div class="col-md-6">
             <p class="text-light">
               <small>
-                Copyright © 2016 - 2024   Markedium
+                Copyright © 2025 Markedium
               </small>
             </p>
           </div>
-  
+
           <div class="col-md-6 second-col ml-auto text-lg-end dd">
             <div class="footer-icons">
-              <a href="#"> <i
-                  class="fa-brands fa-facebook text-white"></i></a>
+              <a href="#"> <i class="fa-brands fa-facebook text-white"></i></a>
               <a href="#"> <i class="fa-brands fa-x-twitter text-white"></i></a>
-              <a href="#"> <i
-                  class="fa-brands fa-instagram text-white"></i></a>
-              <a href="#"> <i
-                  class="fa-brands fa-linkedin text-white"></i></a>
+              <a href="#"> <i class="fa-brands fa-instagram text-white"></i></a>
+              <a href="#"> <i class="fa-brands fa-linkedin text-white"></i></a>
             </div>
           </div>
         </div>
@@ -563,84 +726,91 @@
     <hr class="" style="color: #fff;" />
   </footer>
   <!-- footer end -->
-  
-  
 
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76A2vFD33WkvZ4lXN1d052y0W8V9KrAzsmk94vvkO8RejjOl+1sA9q0p5hfoiCc"
+    crossorigin="anonymous"></script>
 
 
 
   <script>
     var loader = document.getElementById("preloader");
 
-window.addEventListener("load", function(){
-    loader.style.display = "none";
-})
+    window.addEventListener("load", function () {
+      loader.style.display = "none";
+    })
 
 
   </script>
 
-<script>
-  // FAQ Toggle Functionality
-  const faqItems = document.querySelectorAll('.faq-item');
+  <script>
+    // FAQ Toggle Functionality
+    const faqItems = document.querySelectorAll('.faq-item');
 
-  faqItems.forEach(item => {
+    faqItems.forEach(item => {
       item.addEventListener('click', () => {
-          item.classList.toggle('active');
+        item.classList.toggle('active');
       });
-  });
-</script>
+    });
+  </script>
 
-<script>
-  const chatBody = document.getElementById('chat-body');
-const userInput = document.getElementById('user-input');
-const sendBtn = document.getElementById('send-btn');
-const closeChat = document.getElementById('close-chat');
-const chatIcon = document.getElementById('chat-icon');
-const chatbotContainer = document.getElementById('chatbot-container');
+  <script>
+    const chatBody = document.getElementById('chat-body');
+    const userInput = document.getElementById('user-input');
+    const sendBtn = document.getElementById('send-btn');
+    const closeChat = document.getElementById('close-chat');
+    const chatIcon = document.getElementById('chat-icon');
+    const chatbotContainer = document.getElementById('chatbot-container');
 
-// Predefined responses
-const responses = {
-    "what is markedium": "Markedium is a platform that helps brands tell their stories through digital storytelling.",
-    "how does markedium work": "Markedium works by crafting compelling brand stories using data-driven insights.",
-    "what services does markedium offer": "We offer branding strategies, digital storytelling, social media management, and content creation.",
-    "who can use markedium": "Markedium is designed for brands, marketers, and businesses looking to enhance their didital presence.",
-    "what is the cost of markedium": "The cost of markedium varies based on the services you choose. please contact us for a quote.",
-    "how can i get started with markedium": "You can get started by contacting us through our website or signing up for a consultation.",
-    "default": "I'm sorry, I don't have an answer for that. Please contact our support team for more information."
-};
+    // Predefined responses
+    const responses = {
+      "what is markedium": "Markedium is a platform that helps brands tell their stories through digital storytelling.",
+      "how does markedium work": "Markedium works by crafting compelling brand stories using data-driven insights.",
+      "what services does markedium offer": "We offer branding strategies, digital storytelling, social media management, and content creation.",
+      "who can use markedium": "Markedium is designed for brands, marketers, and businesses looking to enhance their didital presence.",
+      "what is the cost of markedium": "The cost of markedium varies based on the services you choose. please contact us for a quote.",
+      "how can i get started with markedium": "You can get started by contacting us through our website or signing up for a consultation.",
+      "default": "I'm sorry, I don't have an answer for that. Please contact our support team for more information."
+    };
 
 
-// Function to add a message to the chat
-function addMessage(message, sender) {
-    const messageDiv = document.createElement('div');
-    messageDiv.classList.add(sender === 'bot' ? 'bot-message' : 'user-message');
-    messageDiv.innerHTML = `<p>${message}</p>`;
-    chatBody.appendChild(messageDiv);
-    chatBody.scrollTop = chatBody.scrollHeight; // Scroll to the bottom
-}
+    // Function to add a message to the chat
+    function addMessage(message, sender) {
+      const messageDiv = document.createElement('div');
+      messageDiv.classList.add(sender === 'bot' ? 'bot-message' : 'user-message');
+      messageDiv.innerHTML = `<p>${message}</p>`;
+      chatBody.appendChild(messageDiv);
+      chatBody.scrollTop = chatBody.scrollHeight; // Scroll to the bottom
+    }
 
-// Handle user input
-sendBtn.addEventListener('click', () => {
-    const userMessage = userInput.value.trim().toLowerCase();
-    if (userMessage) {
+    // Handle user input
+    sendBtn.addEventListener('click', () => {
+      const userMessage = userInput.value.trim().toLowerCase();
+      if (userMessage) {
         addMessage(userInput.value, 'user');
         userInput.value = '';
 
         // Get bot response
         const botResponse = responses[userMessage] || responses["default"];
         setTimeout(() => addMessage(botResponse, 'bot'), 500);
-    }
-});
+      }
+    });
 
-// Open chatbot when chat icon is clicked
-chatIcon.addEventListener('click', () => {
-    chatbotContainer.style.display = 'flex';
-});
+    // Open chatbot when chat icon is clicked
+    chatIcon.addEventListener('click', () => {
+      chatbotContainer.style.display = 'flex';
+    });
 
-// Close chatbot when close button is clicked
-closeChat.addEventListener('click', () => {
-    chatbotContainer.style.display = 'none';
-});
-</script>
+    // Close chatbot when close button is clicked
+    closeChat.addEventListener('click', () => {
+      chatbotContainer.style.display = 'none';
+    });
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
