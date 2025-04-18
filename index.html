@@ -8,7 +8,7 @@
   <!--Main stylesheet-->
   <link rel="stylesheet" href="home.css">
   <!--Logo icon-->
-  <link rel="icon" href="images/Logo.jpg" />
+  <link rel="icon" href="images/Logo 2.png" />
 
   <!-- poppins google font -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -93,10 +93,10 @@
 
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
           <li class="nav-but">
-            <a class="btn btn-outline-light" href="#">Contact Us</a>
+            <a class="btn btn-outline-light" href="#contact">Contact Us</a>
           </li>
           <li class="nav-but">
-            <a class="btn btn-outline-light" href="#">Book Now</a>
+            <a class="btn btn-outline-light" href="#booking">Book Now</a>
           </li>
         </ul>
       </div>
@@ -582,45 +582,78 @@
   <!--price section end -->
 
   <!--meet the team start-->
-  <section class="team">
-    <h1>Meet Our Team</h1>
-    <div class="team-content">
-      <!-- Team Member 1 -->
-      <div class="team-card">
-        <div class="card-inner">
-          <img src="images/CEO.jpg" alt="Team Member 1">
-          <h2>Omotayo Pelumin</h2>
-          <p>CEO & Founder</p>
-          <div class="social-icons">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+  <section class="team-timeline">
+    <div class="container">
+      <h2 class="text-center mb-5">Meet the Team</h2>
+      <div class="timeline">
+        <!-- Team Member 1 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <img src="images/ceo.jpg" alt="Omotayo Pelumin">
+            <h3>Omotayo Pelumin</h3>
+            <p>CEO & Founder</p>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
           </div>
         </div>
-      </div>
-      <!-- Team Member 2 -->
-      <div class="team-card">
-        <div class="card-inner">
-          <img src="images/Emmanuel.jpg" alt="Team Member 2">
-          <h2>Eguzoro Emmanuel Chiebuka</h2>
-          <p>Lead Developer</p>
-          <div class="social-icons">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <!-- Team Member 2 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <img src="images/Emmanuel.jpg" alt="Eguzoro Emmanuel">
+            <h3>Eguzoro Emmanuel</h3>
+            <p>Web Developer</p>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
           </div>
         </div>
-      </div>
-      <!-- Team Member 3 -->
-      <div class="team-card">
-        <div class="card-inner">
-          <img src="team3.jpg" alt="Team Member 3">
-          <h2>Emily Johnson</h2>
-          <p>UI/UX Designer</p>
-          <div class="social-icons">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <!-- Team Member 3 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <img src="images/Ishola Mariam.jpg" alt="Emily Johnson">
+            <h3>Ishola Mariam</h3>
+            <p>Researcher</p>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+         <!-- Team Member 4 -->
+         <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <img src="images/Webe Blessing.jpg" alt="Emily Johnson">
+            <h3>Webe Blessing</h3>
+            <p>Web Developer</p>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+         <!-- Team Member 5 -->
+         <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <img src="images/James.jpg" alt="Emily Johnson">
+            <h3>James Victor</h3>
+            <p>Web Developer</p>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
           </div>
         </div>
       </div>
@@ -628,12 +661,113 @@
   </section>
   <!--meet the team end-->
 
-  <!-- Chat Icon Start-->
+  <!--Contact us start-->
+  <div id="contact">
+    <section id="contact-us" class="contact-section">
+      <div class="container">
+        <h2 class="text-center mb-5">Contact Us</h2>
+        <div class="row g-4">
+          <!-- Contact Form -->
+          <div class="col-12 col-md-6">
+            <form class="contact-form">
+              <div class="mb-3">
+                <label for="name" class="form-label">Your Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Your Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Your Message</label>
+                <textarea class="form-control" id="message" rows="5" placeholder="Write your message here..."
+                  required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary w-100">Send Message</button>
+            </form>
+          </div>
+
+          <!-- Contact Details -->
+          <div class="col-12 col-md-6">
+            <div class="contact-details">
+              <h3>Get in Touch</h3>
+              <p>We’d love to hear from you! Reach out to us through any of the following ways:</p>
+              <ul class="contact-info">
+                <li><i class="fas fa-map-marker-alt"></i> 123 Markedium Street, Lagos, Nigeria</li>
+                <li><i class="fas fa-phone-alt"></i> +234 123 456 7890</li>
+                <li><i class="fas fa-envelope"></i> support@markedium.com</li>
+              </ul>
+              <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <!--Contact us ends-->
+
+  <!--Booking start-->
+  <div id="booking">
+    <section id="booking" class="booking-section">
+      <div class="container">
+        <h2 class="text-center mb-5">Book Your Plan</h2>
+        <div class="row g-4">
+          <!-- Booking Form -->
+          <div class="col-12 col-md-8 mx-auto">
+            <form class="booking-form">
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <label for="name" class="form-label">Your Name</label>
+                  <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label for="email" class="form-label">Your Email</label>
+                  <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <label for="phone" class="form-label">Phone Number</label>
+                  <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label for="plan" class="form-label">Select Plan</label>
+                  <select class="form-select" id="plan" required>
+                    <option value="" disabled selected>Select a plan</option>
+                    <option value="basic">Basic Plan - NGN 20K/month</option>
+                    <option value="pro">Pro Plan - NGN 40K/month</option>
+                    <option value="premium">Premium Plan - NGN 70K/month</option>
+                    <option value="workshop">Workshop Plan - NGN 20K/month</option>
+                  </select>
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Additional Notes</label>
+                <textarea class="form-control" id="message" rows="4"
+                  placeholder="Write any additional details here..."></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary w-100">Book Now</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <!--Booking ends-->
+
+  <!--Contact us ends-->
+
+  <!-- Chat Icon Start--
   <div class="chat-icon" id="chat-icon">
     
   </div>
 
-  <!-- Chatbot Container -->
+   Chatbot Container --
   <div class="chatbot-container" id="chatbot-container">
     <div class="chat-header">
       <h3>Markedium Chatbot</h3>
@@ -649,7 +783,7 @@
       <button id="send-btn">Send</button>
     </div>
   </div>
-  <!-- Chat Icon Ends-->
+   Chat Icon Ends-->
 
   <!-- footer start -->
   <footer class="footer">
@@ -658,7 +792,7 @@
         <div class="col-lg-2.5 mt-0 mb-3">
           <div class="d-flex mt-3">
             <a class="navbar-brand company-name-ii" href="Home.html">
-              <img src="images/Rectangle 61 (3).png" width="40px" height="40px" alt=""
+              <img src="images/Logo 2.png" width="40px" height="40px" alt=""
                 class="img-fluid d-inline-block footer-imggg align-top">
               Markedium
             </a>
@@ -672,7 +806,9 @@
             <a href="#landing-page" class="foot-link">
               <li class="list-head">Home</li>
             </a>
-            <a href="#" class="foot-link"> <li class="list-word">About Us</li> </a>
+            <a href="#" class="foot-link">
+              <li class="list-word">About Us</li>
+            </a>
             <a href="#services" class="foot-link">
               <li class="list-word">Serivces</li>
             </a>
@@ -744,10 +880,9 @@
 
   </script>
 
-<script>
-  (function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="XttJ_kUZLEBIz56fMLn2d";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
+  <script>
+      (function () { if (!window.chatbase || window.chatbase("getState") !== "initialized") { window.chatbase = (...arguments) => { if (!window.chatbase.q) { window.chatbase.q = [] } window.chatbase.q.push(arguments) }; window.chatbase = new Proxy(window.chatbase, { get(target, prop) { if (prop === "q") { return target.q } return (...args) => target(prop, ...args) } }) } const onLoad = function () { const script = document.createElement("script"); script.src = "https://www.chatbase.co/embed.min.js"; script.id = "XttJ_kUZLEBIz56fMLn2d"; script.domain = "www.chatbase.co"; document.body.appendChild(script) }; if (document.readyState === "complete") { onLoad() } else { window.addEventListener("load", onLoad) } })();
   </script>
-
 
   <script>
     const chatBody = document.getElementById('chat-body');
